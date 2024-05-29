@@ -26,7 +26,6 @@ function Header() {
                         <li onClick={closeMenu}><Link to="/" style={{textDecoration: 'none'}}>Ireo Sera</Link></li>
                         <li onClick={closeMenu}><Link to="/addSera" style={{textDecoration: 'none'}}>Hisera</Link> </li>
                         <li onClick={closeMenu}><Link to="/hitady" style={{textDecoration: 'none'}}>Hitady</Link></li>
-                        <li onClick={closeMenu}><Link to="/misymitady" style={{textDecoration: 'none'}}>Misy Pitady</Link></li>
                     </ul>
                 </div>
             </div>
