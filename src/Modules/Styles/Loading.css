@@ -1,0 +1,39 @@
+
+/*Loading*/
+.loading-spinner-container {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Pleine hauteur de la fenêtre */
+    margin-left: 600px; /* Ajuster la marge vers la droite */
+  }
+  
+  .loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #333; /* Couleur du cercle */
+    border-radius: 50%;
+    width: 10vw; /* Utilisation de la largeur de la vue */
+    height: 10vw; /* Utilisation de la largeur de la vue */
+    max-width: 50px; /* Diamètre maximum du cercle */
+    max-height: 50px; /* Diamètre maximum du cercle */
+    animation: spin 1s linear infinite; /* Animation du cercle */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg); /* Rotation initiale */
+    }
+    100% {
+      transform: rotate(360deg); /* Rotation complète */
+    }
+  }
+  
+  /* Styles supplémentaires pour les écrans plus petits */
+  @media screen and (max-width: 768px) {
+    .loading-spinner {
+      width: 20vw; /* Utilisation de la largeur de la vue */
+      height: 20vw; /* Utilisation de la largeur de la vue */
+      max-width: 40px; /* Diamètre maximum du cercle */
+      max-height: 40px; /* Diamètre maximum du cercle */
+    }
+  }
